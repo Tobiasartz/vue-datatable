@@ -14,16 +14,6 @@ export default () => {
         expect(handler.use_default_type).toBe(true);
     });
 
-    it('can disable default datatable type', () => {
-        let handler = new Factory();
-
-        expect(handler.use_default_type).toBe(true);
-
-        handler.useDefaultType(false);
-
-        expect(handler.use_default_type).toBe(false);
-    });
-
     it('can register a new datatable type', () => {
         let handler = new Factory();
 
